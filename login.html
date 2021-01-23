@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link rel="stylesheet" type="text/css" href="font/css/all.min.css">
+</head>
+<body style="background: linear-gradient(to right, #08053c 50%, #fa0000 100%);">
+	<div class="border">
+		<h2 class="borderh">LOGIN</h2>
+		<img src="img/chat.png">
+		<form name="myForm" onsubmit="return validateForm()">
+		<input type="email" name="email" class="email" id="email" placeholder="name@emil.com" >
+		<input type="password" name="password" class="password" id="password" placeholder="******">
+		<br>
+		<br>
+		<a href="#" class="For"> Forgot Pasword ? </a>
+		<br>
+		<br>
+		<a href="index.html"><button name="button" id="login-form-submit" style="padding-left: 50px; padding-right: 50px; padding-top: 5px;padding-bottom: 5px; border-radius: 20px; margin-left: 25%; background:#0693e3; color: #ffff;" onclick="sign()">LOGIN</button></a>
+		 <br>
+		<br>
+		<a href="#" class="For" style="margin-left: 15%;"> Don't have on Account? Sign Up </a>
+	</div></form>
+	</div>
+	<script >
+	// var e document.getElementById("email").value;
+	// var p document.getElementById("password").value;
+	// function sign() {
+	// 		if (e==true && p==true) {
+	// 			 window.open("project2/index.html")
+	// 		}
+	// 		else{
+	// 			alert("You have unsuccessfully logged in.");
+	// 		}
+	// 	}
+	
+
+		function sign() {
+		  var x = document.forms["myForm"]["email"].value;
+		  var y = document.forms["myForm"]["password"].value;
+		  if (x == "eman@emil.com" && y == "12345") {
+		    window.open("index.html")
+  		}
+  		else{
+				
+				document.getElementById("email").style.borderColor = "red";
+				alert("You have logged in unsuccessfully.");
+			}
+	}
+
+	</script>
+
+</body>
+</html>
